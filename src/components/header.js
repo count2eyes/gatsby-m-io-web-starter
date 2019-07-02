@@ -73,41 +73,41 @@ class Header extends React.Component {
             </section>
           </div>
         </header>
-        <aside className="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust ">
-          <div className="mdc-drawer__content">
-            <div className="mdc-list">
-              <Link
-                className="mdc-list-item mdc-list-item--activated"
-                to=""
+        <aside class="mdc-drawer mdc-drawer--modal">
+          <div class="mdc-drawer__content">
+            <nav class="mdc-list">
+              <a
+                class="mdc-list-item mdc-list-item--activated"
+                href="#"
                 aria-current="page"
               >
                 <i
-                  className="material-icons mdc-list-item__graphic"
+                  class="material-icons mdc-list-item__graphic"
                   aria-hidden="true"
                 >
                   inbox
                 </i>
-                <span className="mdc-list-item__text">Inbox</span>
-              </Link>
-              <Link className="mdc-list-item" to="">
+                <span class="mdc-list-item__text">Inbox</span>
+              </a>
+              <a class="mdc-list-item" href="#">
                 <i
-                  className="material-icons mdc-list-item__graphic"
+                  class="material-icons mdc-list-item__graphic"
                   aria-hidden="true"
                 >
                   send
                 </i>
-                <span className="mdc-list-item__text">Outgoing</span>
-              </Link>
-              <Link className="mdc-list-item" to="">
+                <span class="mdc-list-item__text">Outgoing</span>
+              </a>
+              <a class="mdc-list-item" href="#">
                 <i
-                  className="material-icons mdc-list-item__graphic"
+                  class="material-icons mdc-list-item__graphic"
                   aria-hidden="true"
                 >
                   drafts
                 </i>
-                <span className="mdc-list-item__text">Drafts</span>
-              </Link>
-            </div>
+                <span class="mdc-list-item__text">Drafts</span>
+              </a>
+            </nav>
           </div>
         </aside>
       </React.Fragment>

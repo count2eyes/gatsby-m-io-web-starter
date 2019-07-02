@@ -68,7 +68,7 @@ body {
 }
 
 .app-bar {
-  position: fixed;
+  position: absolute;
 }
 
 // only apply this style if below top app bar
@@ -77,10 +77,10 @@ body {
 }
 
 .mdc-drawer--dismissible {
-  position: fixed;
+  position: absolute;
 }
 
 .mdc-drawer.mdc-drawer--open:not(.mdc-drawer--closing)
   + .mdc-drawer-app-content {
-  margin-left: 0;
+  // margin-left: 0;
 }
