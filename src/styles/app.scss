@@ -1,0 +1,86 @@
+@import "./reset.scss";
+@import "./theme.scss";
+@import "./typography.scss";
+
+@import "@material/top-app-bar/mdc-top-app-bar.scss";
+@import "@material/drawer/mdc-drawer.scss";
+
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  background-color: var(--mdc-theme-background);
+  color: var(--mdc-theme-on-background);
+  line-height: 1.5rem;
+}
+
+p {
+  margin: 1rem auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.underlined__link {
+  text-decoration: underline;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--mdc-theme-on-primary);
+  background: var(--mdc-theme-primary);
+}
+
+::selection {
+  color: var(--mdc-theme-on-primary);
+  background: var(--mdc-theme-primary);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+.app-bar {
+  position: fixed;
+}
+
+// only apply this style if below top app bar
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+.mdc-drawer--dismissible {
+  position: fixed;
+}
+
+.mdc-drawer.mdc-drawer--open:not(.mdc-drawer--closing)
+  + .mdc-drawer-app-content {
+  margin-left: 0;
+}
